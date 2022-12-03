@@ -34,7 +34,7 @@ internal sealed class Knight : LegendaryHuman
                         Console.WriteLine($"{wizard.Rank} {wizard.GetType()} {wizard.Name} with HP {wizard.HealthPoints} is dead.");
                     break;
                 case Knight knight:
-                    Console.WriteLine($"{GetType()} {Name} with HP {HealthPoints} attacked {knight.GetType()} {knight.Name} with HP {knight.HealthPoints}.");
+                    Console.WriteLine($"Knight {Name} with HP {HealthPoints} attacked {knight.GetType()} {knight.Name} with HP {knight.HealthPoints}.");
                     knight.HealthPoints -= Power;
                     if (knight.HealthPoints <= 0)
                         Console.WriteLine($"{knight.GetType()} {knight.Name} with HP {knight.HealthPoints} is dead.");
