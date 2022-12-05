@@ -3,15 +3,14 @@ using System;
 [Flags]
 public enum Permissions
 {
-    
-    Default=0b000000001,
-    UserRead = 0b0000000010,
-    UserWrite = 0b0000000100,
-    UserExecute = 0b0000001000,
-    GroupRead = 0b0000010000,
-    GroupWrite = 0b0000100000,
-    GroupExecute = 0b0001000000,
-    EveryoneRead = 0b0010000000,
-    EveryoneWrite = 0b0100000000,
-    EveryoneExecute = 0b1000000000
+    Default = 1 << 0,
+    UserRead = 1 << 1,
+    UserWrite = 1 << 2,
+    UserExecute = 1 << 3,
+    GroupRead = 1 << 4,
+    GroupWrite = 1 << 5,
+    GroupExecute = 1 << 6,
+    EveryoneRead = 1 << 7,
+    EveryoneWrite = 1 << 8,
+    EveryoneExecute = 1 << 9
 }
